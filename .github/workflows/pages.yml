@@ -26,10 +26,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Install Godot
         run: |
-          wget --content-disposition https://downloads.godotengine.org/?version=4.6&flavor=rc1&slug=export_templates.tpz&platform=templates
+          wget --content-disposition https://downloads.godotengine.org/?version=4.6\&flavor=rc1\&slug=export_templates.tpz\&platform=templates
           mkdir -p ~/.local/share/godot/export_templates/4.6.rc1
           unzip -j Godot_v4.6-rc1_export_templates.tpz -d ~/.local/share/godot/export_templates/4.6.rc1
-          wget --content-disposition https://downloads.godotengine.org/?version=4.6&flavor=rc1&slug=linux.x86_64.zip&platform=linux.64
+          wget --content-disposition https://downloads.godotengine.org/?version=4.6\&flavor=rc1\&slug=linux.x86_64.zip\&platform=linux.64
           unzip Godot_v4.6-rc1_linux.x86_64.zip
           ./Godot_v4.6-rc1_linux.x86_64 --headless --export-release Web
           ./Godot_v4.6-rc1_linux.x86_64 --headless --export-release Windows
