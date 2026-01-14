@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://c0aclimway7f6"]
 
 [node name="MainBattle" type="Node2D"]
+
+[node name="Attack" type="Button" parent="."]
+offset_left = -190.0
+offset_top = 100.0
+offset_right = -133.0
+offset_bottom = 131.0
+text = "attack"

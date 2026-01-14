@@ -5,5 +5,5 @@ func _ready() -> void:
 
 func _begin_combat(body: Node2D):
 	if body == $"../Player":
-		Global.in_battle = true
 		$"../Player/MainBattle".show()
+		Global.in_battle = true
