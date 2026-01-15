@@ -56,6 +56,7 @@ func _enter_tree():
 	vbox.add_child(rate_slider)
 
 	var speed_slider = HSlider.new()
+	speed_slider.step = 0.01
 	speed_slider.min_value = 0.1
 	speed_slider.max_value = 2.0
 	speed_slider.value = speed
