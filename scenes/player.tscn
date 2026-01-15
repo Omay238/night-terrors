@@ -174,14 +174,14 @@ animations = [{
 radius = 12.0
 height = 32.0
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("sprite")]
+[node name="Player" type="CharacterBody2D" unique_id=1304835115 node_paths=PackedStringArray("sprite")]
 script = ExtResource("1_3vyb7")
 sprite = NodePath("AnimatedSprite2D")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1153693919]
 sprite_frames = SubResource("SpriteFrames_3vyb7")
 animation = &"move_down"
 autoplay = "idle_down"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1333855860]
 shape = SubResource("CapsuleShape2D_g2els")

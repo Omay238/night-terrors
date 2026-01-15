@@ -2,11 +2,15 @@
 
 [ext_resource type="Script" uid="uid://b525ogk8mqsri" path="res://scripts/enemy.gd" id="1_7p1mj"]
 
-[node name="Enemy" type="Sprite2D" unique_id=458513083]
+[node name="Enemy" type="RigidBody2D" unique_id=1008575778]
+gravity_scale = 0.0
+continuous_cd = 2
+contact_monitor = true
+max_contacts_reported = 2
 script = ExtResource("1_7p1mj")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=465876947]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65929014]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=565323303]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1457806756]
 
-[connection signal="body_entered" from="Area2D" to="." method="_begin_combat"]
+[connection signal="body_entered" from="." to="." method="_begin_combat"]
