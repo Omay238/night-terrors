@@ -11,34 +11,34 @@ size = Vector2(94, 65.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14vil"]
 size = Vector2(63.5, 32.5)
 
-[node name="Room" type="Node2D"]
+[node name="Room" type="Node2D" unique_id=1720207181]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1667671761]
 tile_map_data = PackedByteArray("AAD///3/AgAKAAAAAAD///7/AgAJAAIAAAD/////AgAJAAIAAAD//wAAAgAJAAIAAAD//wEAAgAJAAIAAAD//wIAAgAJAAMAAAAAAAEAAgAJAAIAAAAAAAAAAgAJAAIAAAAAAP//AgAJAAIAAAAAAP7/AgAJAAIAAAAAAP3/AgAKAAAAAAAAAAIAAgAJAAMAAAABAAIAAgAJAAMAAAABAAEAAgAJAAIAAAABAAAAAgAJAAIAAAABAP//AgAJAAIAAAABAP7/AgAJAAIAAAABAP3/AgAKAAAAAAACAP3/AgAKAAAAAAACAP7/AgAJAAIAAAACAP//AgAJAAIAAAACAAAAAgAJAAIAAAACAAEAAgAJAAIAAAACAAIAAgAJAAMAAAADAAIAAgAJAAMAAAADAAEAAgAJAAIAAAADAAAAAgAJAAIAAAADAP//AgAJAAIAAAADAP7/AgAJAAIAAAADAP3/AgAKAAAAAAAEAP3/AgAKAAAAAAAEAP7/AgAJAAIAAAAEAP//AgAJAAIAAAAEAAAAAgAJAAIAAAAEAAEAAgAJAAIAAAAEAAIAAgAJAAMAAAAFAAIAAgAJAAMAAAAFAAEAAgAJAAIAAAAFAAAAAgAJAAIAAAAFAP//AgAJAAIAAAAFAP7/AgAJAAIAAAAFAP3/AgAKAAAAAAAGAP3/AgALAAAAAAAGAP7/AgALAAIAAAAGAP//AgALAAIAAAAGAAAAAgALAAIAAAAGAAEAAgALAAIAAAAGAAIAAgALAAMAAAD+/wIAAgAIAAMAAAD+/wEAAgAIAAEAAAD+/wAAAgAIAAEAAAD+////AgAIAAEAAAD+//7/AgAIAAEAAAD+//3/AgAIAAAAAAAHAPz/AgAKAAEAAAAHAP3/AgAKAAEAAAAHAP7/AgAKAAEAAAAHAP//AgAKAAEAAAAHAAAAAgAKAAEAAAAHAAEAAgAKAAEAAAAHAAIAAgAKAAEAAAAHAAMAAgAKAAEAAAAGAAMAAgAKAAEAAAAFAAMAAgAKAAEAAAAEAAMAAgAKAAEAAAADAAMAAgAKAAEAAAACAAMAAgAKAAEAAAABAAMAAgAKAAEAAAAAAAMAAgAKAAEAAAD//wMAAgAKAAEAAAD+/wMAAgAKAAEAAAD9/wMAAgAKAAEAAAD9/wIAAgAKAAEAAAD9/wEAAgAKAAEAAAD9/wAAAgAKAAEAAAD9////AgAKAAEAAAD9//7/AgAKAAEAAAD9//3/AgAKAAEAAAD9//z/AgAKAAEAAAD+//z/AgAKAAEAAAD///z/AgAKAAEAAAAAAPz/AgAKAAEAAAABAPz/AgAKAAEAAAACAPz/AgAKAAEAAAADAPz/AgAKAAEAAAAEAPz/AgAKAAEAAAAFAPz/AgAKAAEAAAAGAPz/AgAKAAEAAAA=")
 tile_set = ExtResource("1_36trf")
 
-[node name="Player" parent="." instance=ExtResource("2_ffxv4")]
+[node name="Player" parent="." unique_id=1293956042 instance=ExtResource("2_ffxv4")]
 position = Vector2(200, 0)
 
-[node name="Bed" type="Sprite2D" parent="."]
+[node name="Bed" type="Sprite2D" parent="." unique_id=1787186004]
 position = Vector2(-28, -4)
 texture = ExtResource("3_85yof")
 script = ExtResource("4_14vil")
 
-[node name="Area2D" type="Area2D" parent="Bed"]
+[node name="Area2D" type="Area2D" parent="Bed" unique_id=1740648382]
 position = Vector2(28, 4)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed/Area2D" unique_id=784200480]
 position = Vector2(-13, -1.75)
 shape = SubResource("RectangleShape2D_85yof")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Bed"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Bed" unique_id=345713860]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed/StaticBody2D" unique_id=1639509609]
 position = Vector2(0.25, 7.75)
 shape = SubResource("RectangleShape2D_14vil")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=376720845]
 visible = false
 offset_left = 61.0
 offset_top = 41.0
@@ -48,5 +48,8 @@ text = "press [SPACE] to sleep"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1731791270]
 position = Vector2(96, 0)
+
+[connection signal="body_entered" from="Bed/Area2D" to="Bed" method="_enable_label"]
+[connection signal="body_exited" from="Bed/Area2D" to="Bed" method="_disable_label"]

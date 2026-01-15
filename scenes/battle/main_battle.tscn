@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://c0aclimway7f6"]
 
-[node name="MainBattle" type="Node2D"]
+[ext_resource type="Script" uid="uid://bf3pjfqgij8vb" path="res://scripts/main_battle.gd" id="1_2fped"]
 
-[node name="Attack" type="Button" parent="."]
+[node name="MainBattle" type="Node2D" unique_id=541101866]
+script = ExtResource("1_2fped")
+
+[node name="Attack" type="Button" parent="." unique_id=1619196625]
 offset_left = -190.0
 offset_top = 100.0
 offset_right = -133.0
