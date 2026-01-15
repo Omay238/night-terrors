@@ -19,6 +19,7 @@ size = Vector2(32, 600)
 script = ExtResource("1_ae1lw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=529323330]
+position = Vector2(185, 0)
 limit_top = 150
 limit_bottom = 150
 

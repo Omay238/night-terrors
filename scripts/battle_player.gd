@@ -21,6 +21,8 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("down"):
 		position.y += 200 * delta
 	
+	position.y = get_parent().get_local_mouse_position().y
+	
 	if position.y < -16:
 		position.y = 316
 	if position.y > 316:
