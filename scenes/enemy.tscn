@@ -4,9 +4,10 @@
 
 [node name="Enemy" type="RigidBody2D" unique_id=1008575778]
 gravity_scale = 0.0
+can_sleep = false
 continuous_cd = 2
 contact_monitor = true
-max_contacts_reported = 2
+max_contacts_reported = 8
 script = ExtResource("1_7p1mj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=65929014]

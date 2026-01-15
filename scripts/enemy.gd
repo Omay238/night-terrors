@@ -16,20 +16,21 @@ func _ready() -> void:
 	refresh()
 
 func _process(delta: float) -> void:
-	freeze = Global.in_battle
-	
-	if enemy_type.moves and not Global.in_battle:
-		if randi() % int(5000 * delta) < 1:
-			direction = randi() % 4
+	if not Engine.is_editor_hint():
+		freeze = Global.in_battle
 		
-		if direction == 0:
-			move_and_collide(Vector2(delta * speed, 0))
-		elif direction == 1:
-			move_and_collide(Vector2(-delta * speed, 0))
-		elif direction == 2:
-			move_and_collide(Vector2(0, delta * speed))
-		elif direction == 3:
-			move_and_collide(Vector2(0, -delta * speed))
+		if enemy_type.moves and not Global.in_battle:
+			if randi() % int(5000 * delta) < 1:
+				direction = randi() % 4
+			
+			if direction == 0:
+				move_and_collide(Vector2(delta * speed, 0))
+			elif direction == 1:
+				move_and_collide(Vector2(-delta * speed, 0))
+			elif direction == 2:
+				move_and_collide(Vector2(0, delta * speed))
+			elif direction == 3:
+				move_and_collide(Vector2(0, -delta * speed))
 
 func _begin_combat(body: Node):
 	if body == $"../Player":

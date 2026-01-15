@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c0aclimway7f6" path="res://scenes/battle/main_battle.tscn" id="5_0absb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4o7q8"]
+custom_solver_bias = 1.0
 radius = 12.0
 height = 32.0
 
