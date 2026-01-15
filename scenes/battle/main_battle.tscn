@@ -11,3 +11,5 @@ offset_top = 100.0
 offset_right = -133.0
 offset_bottom = 131.0
 text = "attack"
+
+[connection signal="button_down" from="Attack" to="." method="_rhythm"]

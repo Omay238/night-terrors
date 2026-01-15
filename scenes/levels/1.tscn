@@ -49,3 +49,4 @@ position = Vector2(200, 158)
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1698426507]
 
 [node name="MainBattle" parent="Player" unique_id=1155801549 instance=ExtResource("5_0absb")]
+visible = false

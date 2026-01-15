@@ -17,6 +17,11 @@ func _process(delta: float) -> void:
 		score -= 2 * delta
 	
 	if Input.is_action_pressed("up"):
-		position.y -= 150 * delta
+		position.y -= 200 * delta
 	if Input.is_action_pressed("down"):
-		position.y += 150 * delta
+		position.y += 200 * delta
+	
+	if position.y < -16:
+		position.y = 316
+	if position.y > 316:
+		position.y = -16

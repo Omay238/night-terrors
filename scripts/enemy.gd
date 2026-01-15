@@ -35,4 +35,5 @@ func _process(delta: float) -> void:
 func _begin_combat(body: Node):
 	if body == $"../Player":
 		$"../Player/MainBattle".show()
+		Global.op = self
 		Global.in_battle = true

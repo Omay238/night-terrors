@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bwlntxkm5ruse"]
+
+[ext_resource type="Script" uid="uid://bug2gtm70h6ds" path="res://scripts/fin.gd" id="1_5royu"]
+
+[node name="Fin" type="Node2D" unique_id=515011655]
+script = ExtResource("1_5royu")
+
+[node name="Label" type="Label" parent="." unique_id=752792818]
+offset_left = 147.0
+offset_top = 124.0
+offset_right = 255.0
+offset_bottom = 147.0
+text = "yeah that's all"
