@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://c2ngf1ccu5gub"]
+[gd_scene format=4 uid="uid://c2ngf1ccu5gub"]
+
+[ext_resource type="TileSet" uid="uid://5jvptpn2yfft" path="res://assets/notes.tres" id="1_r1wge"]
 
 [node name="Rhythm" type="Node2D" unique_id=415702952]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=573014327]
+tile_map_data = PackedByteArray("AAAAAAgAAAAAAAIAAAAEAAYAAAAAAAIAAAAIAAQAAAAAAAIAAAAMAAIAAAAAAAIAAAAQAAAAAAAAAAEAAAARAAAAAAAAAAAAAAASAAAAAAAAAAAAAAATAAAAAAAAAAAAAAAUAAAAAAABAAIAAAAZAAgAAAAAAAIAAAAdAAYAAAAAAAIAAAAhAAQAAAAAAAIAAAAlAAIAAAAAAAIAAAA=")
+tile_set = ExtResource("1_r1wge")

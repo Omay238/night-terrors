@@ -29,6 +29,10 @@ window/size/viewport_width=400
 window/size/viewport_height=300
 window/stretch/mode="viewport"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/music_charter/plugin.cfg")
+
 [input]
 
 up={
