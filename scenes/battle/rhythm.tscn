@@ -1,9 +1,18 @@
 [gd_scene format=4 uid="uid://c2ngf1ccu5gub"]
 
 [ext_resource type="TileSet" uid="uid://5jvptpn2yfft" path="res://assets/notes.tres" id="1_r1wge"]
+[ext_resource type="PackedScene" uid="uid://bkm4ivs4328k4" path="res://scenes/battle/battle_player.tscn" id="2_80g1h"]
+[ext_resource type="AudioStream" uid="uid://ovnmtgkv81mv" path="res://assets/audio/tutorial song.wav" id="3_qaih8"]
 
 [node name="Rhythm" type="Node2D" unique_id=415702952]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=573014327]
 tile_map_data = PackedByteArray("AAABAAgAAAAAAAIAAAAIAAYAAAAAAAIAAAAPAAQAAAAAAAIAAAAWAAIAAAAAAAIAAAAeAAAAAAAAAAEAAAAfAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAhAAAAAAABAAIAAAAiAAgAAAAAAAIAAAApAAYAAAAAAAIAAAAxAAQAAAAAAAIAAAA4AAIAAAAAAAIAAABCAAAAAAAAAAEAAABDAAAAAAABAAIAAABFAAYAAAAAAAIAAABHAAgAAAAAAAIAAABJAAYAAAAAAAIAAABLAAYAAAAAAAIAAABRAAgAAAAAAAIAAABTAAYAAAAAAAIAAABYAAQAAAAAAAIAAABdAAYAAAAAAAIAAABgAAgAAAAAAAIAAABjAAYAAAAAAAIAAABrAAgAAAAAAAIAAABuAAYAAAAAAAIAAABwAAgAAAAAAAIAAABzAAQAAAAAAAIAAABVAAgAAAAAAAIAAABlAAgAAAAAAAIAAAA=")
 tile_set = ExtResource("1_r1wge")
+
+[node name="BattlePlayer" parent="." unique_id=859383250 instance=ExtResource("2_80g1h")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=63368190]
+stream = ExtResource("3_qaih8")
+autoplay = true
+max_distance = 200000.0

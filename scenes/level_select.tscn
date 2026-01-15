@@ -1,8 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://p3f1w86c6lj1"]
+[gd_scene format=3 uid="uid://p3f1w86c6lj1"]
 
 [ext_resource type="Script" uid="uid://cc2vli7vf8cy0" path="res://scripts/level_select.gd" id="1_3shnc"]
+[ext_resource type="PackedScene" uid="uid://c2ngf1ccu5gub" path="res://scenes/battle/rhythm.tscn" id="2_2epne"]
 [ext_resource type="PackedScene" uid="uid://c78mic164w5y" path="res://scenes/levels/1.tscn" id="2_p0wlc"]
 
-[node name="LevelSelect" type="Node2D"]
+[node name="LevelSelect" type="Node2D" unique_id=1305651933]
 script = ExtResource("1_3shnc")
-levels = Array[PackedScene]([ExtResource("2_p0wlc")])
+levels = Array[PackedScene]([ExtResource("2_2epne"), ExtResource("2_p0wlc")])

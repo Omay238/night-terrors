@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bkm4ivs4328k4"]
+
+[ext_resource type="Script" uid="uid://cjacgw4haflws" path="res://scripts/battle_player.gd" id="1_ae1lw"]
+[ext_resource type="Texture2D" uid="uid://b20ahy6gsvswd" path="res://assets/img/alt_player.png" id="2_h5y67"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u7p5w"]
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3tcj"]
+size = Vector2(32, 96)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5y67"]
+size = Vector2(32, 160)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rttl"]
+size = Vector2(32, 600)
+
+[node name="BattlePlayer" type="Node2D" unique_id=859383250]
+script = ExtResource("1_ae1lw")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=529323330]
+limit_top = 150
+limit_bottom = 150
+
+[node name="perfect" type="Area2D" parent="." unique_id=2054936444]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="perfect" unique_id=1680120689]
+shape = SubResource("RectangleShape2D_u7p5w")
+
+[node name="good" type="Area2D" parent="." unique_id=52667944]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="good" unique_id=1656597284]
+shape = SubResource("RectangleShape2D_l3tcj")
+
+[node name="bad" type="Area2D" parent="." unique_id=1179124382]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bad" unique_id=2042388827]
+shape = SubResource("RectangleShape2D_h5y67")
+
+[node name="fail" type="Area2D" parent="." unique_id=873205091]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fail" unique_id=691454684]
+shape = SubResource("RectangleShape2D_3rttl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=817409559]
+texture = ExtResource("2_h5y67")
