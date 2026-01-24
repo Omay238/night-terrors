@@ -11,6 +11,7 @@ var direction = 0
 func refresh():
 	$AnimatedSprite2D.sprite_frames = enemy_type.texture
 	$CollisionShape2D.shape = enemy_type.collision_shape
+	$Area2D/CollisionShape2D.shape = enemy_type.detection_shape
 
 func _ready() -> void:
 	refresh()

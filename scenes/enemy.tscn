@@ -14,4 +14,8 @@ script = ExtResource("1_7p1mj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1457806756]
 
-[connection signal="body_entered" from="." to="." method="_begin_combat"]
+[node name="Area2D" type="Area2D" parent="." unique_id=1994540727]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1279663866]
+
+[connection signal="body_entered" from="Area2D" to="." method="_begin_combat"]
