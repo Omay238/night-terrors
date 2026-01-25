@@ -1,13 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://cckwpobg03ai1"]
+[gd_scene format=3 uid="uid://cckwpobg03ai1"]
 
 [ext_resource type="Script" uid="uid://b8llu2oh8y803" path="res://scripts/menu.gd" id="1_yqeox"]
+[ext_resource type="Texture2D" uid="uid://d0jaes6l0e0ti" path="res://assets/img/main menu background.png" id="2_vjb58"]
+[ext_resource type="Texture2D" uid="uid://ctxxgvw1d3dgl" path="res://assets/img/play button.png" id="3_con2f"]
+[ext_resource type="Texture2D" uid="uid://u6xdsa5j7l5c" path="res://assets/img/title.png" id="4_mhnvy"]
 
-[node name="Menu" type="Node2D"]
+[node name="Menu" type="Node2D" unique_id=1884381410]
 script = ExtResource("1_yqeox")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 68.0
-offset_top = 59.0
-offset_right = 308.0
-offset_bottom = 221.0
-text = "play"
+[node name="MainMenuBackground" type="Sprite2D" parent="." unique_id=754025514]
+position = Vector2(200, 150)
+texture = ExtResource("2_vjb58")
+
+[node name="Button" type="Button" parent="." unique_id=1639356382]
+offset_left = 96.0
+offset_top = 119.0
+offset_right = 304.0
+offset_bottom = 227.0
+icon = ExtResource("3_con2f")
+flat = true
+
+[node name="Title" type="Sprite2D" parent="." unique_id=478868969]
+position = Vector2(215, 60)
+texture = ExtResource("4_mhnvy")

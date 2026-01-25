@@ -2,8 +2,48 @@
 
 [ext_resource type="Script" uid="uid://cc2vli7vf8cy0" path="res://scripts/level_select.gd" id="1_3shnc"]
 [ext_resource type="PackedScene" uid="uid://c78mic164w5y" path="res://scenes/levels/tutorial.tscn" id="2_p0wlc"]
-[ext_resource type="PackedScene" uid="uid://bwlntxkm5ruse" path="res://scenes/fin.tscn" id="3_2epne"]
+[ext_resource type="PackedScene" uid="uid://dqgfbi54m37kr" path="res://scenes/levels/level1.tscn" id="3_ckc44"]
+[ext_resource type="PackedScene" uid="uid://cag5oi3ef4r4r" path="res://scenes/levels/level2.tscn" id="4_o2xx4"]
+[ext_resource type="Texture2D" uid="uid://noftr7p1jkm3" path="res://assets/img/lvl/lvl select kid.png" id="4_rif6e"]
+[ext_resource type="Texture2D" uid="uid://sqf1jsrdq24c" path="res://assets/img/lvl/lvl select bubble.png" id="5_chg43"]
+[ext_resource type="Texture2D" uid="uid://cx37olmxrh5x1" path="res://assets/img/lvl/tutorial bubble.png" id="6_7plkq"]
+[ext_resource type="Texture2D" uid="uid://bv6hfaclpbeil" path="res://assets/img/lvl/level 1 bubble.png" id="7_ckc44"]
+[ext_resource type="Texture2D" uid="uid://ddkva8uissvwv" path="res://assets/img/lvl/level 2 bubble.png" id="8_o2xx4"]
 
-[node name="LevelSelect" type="Node2D" unique_id=1305651933]
+[node name="LevelSelect" type="Node2D" unique_id=1305651933 node_paths=PackedStringArray("level_selectors")]
 script = ExtResource("1_3shnc")
-levels = Array[PackedScene]([ExtResource("2_p0wlc"), ExtResource("3_2epne")])
+levels = Array[PackedScene]([ExtResource("2_p0wlc"), ExtResource("3_ckc44"), ExtResource("4_o2xx4")])
+level_selectors = [NodePath("LvlSelectBubble"), NodePath("LvlSelectBubble2"), NodePath("LvlSelectBubble3")]
+
+[node name="LvlSelectKid" type="Sprite2D" parent="." unique_id=40155371]
+position = Vector2(200, 150)
+texture = ExtResource("4_rif6e")
+
+[node name="LvlSelectBubble" type="Sprite2D" parent="." unique_id=1969542232]
+position = Vector2(80, 224)
+texture = ExtResource("5_chg43")
+offset = Vector2(120, -76)
+
+[node name="TutorialButton" type="Sprite2D" parent="LvlSelectBubble" unique_id=1786993204]
+position = Vector2(120, -74)
+texture = ExtResource("6_7plkq")
+
+[node name="LvlSelectBubble2" type="Sprite2D" parent="." unique_id=735335239]
+position = Vector2(80, 224)
+rotation = 2.6179938
+texture = ExtResource("5_chg43")
+offset = Vector2(120, -76)
+
+[node name="TutorialButton" type="Sprite2D" parent="LvlSelectBubble2" unique_id=864391808]
+position = Vector2(120, -74)
+texture = ExtResource("7_ckc44")
+
+[node name="LvlSelectBubble3" type="Sprite2D" parent="." unique_id=1425778193]
+position = Vector2(80, 224)
+rotation = 2.6179938
+texture = ExtResource("5_chg43")
+offset = Vector2(120, -76)
+
+[node name="TutorialButton" type="Sprite2D" parent="LvlSelectBubble3" unique_id=1717169314]
+position = Vector2(120, -74)
+texture = ExtResource("8_o2xx4")

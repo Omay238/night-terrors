@@ -17,7 +17,9 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="night terrors"
 run/main_scene="uid://cckwpobg03ai1"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://u6xdsa5j7l5c"
+config/icon="uid://c8l2dcxfwwwih"
 
 [autoload]
 
