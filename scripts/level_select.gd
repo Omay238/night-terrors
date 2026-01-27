@@ -3,8 +3,15 @@ extends Node2D
 @export var levels: Array[PackedScene]
 @export var level_selectors: Array[Sprite2D]
 
-var selected_level = 0
+var selected_level = Global.level
 var p_level = 0
+
+func _ready() -> void:
+	for sel in range(len(level_selectors)):
+		if sel == selected_level:
+			level_selectors[sel].rotation = 0
+		else:
+			level_selectors[sel].rotation = PI
 
 func _input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("start"):

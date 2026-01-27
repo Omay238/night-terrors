@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed := 50.0
+@export var speed := 60.0
 @export var sprite: AnimatedSprite2D
 
 var step_accum := 0.0
