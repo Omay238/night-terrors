@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://bkm4ivs4328k4"]
 
 [ext_resource type="Script" uid="uid://cjacgw4haflws" path="res://scripts/battle_player.gd" id="1_ae1lw"]
-[ext_resource type="Texture2D" uid="uid://b20ahy6gsvswd" path="res://assets/img/alt_player.png" id="2_h5y67"]
+[ext_resource type="Texture2D" uid="uid://ckixskmxctavx" path="res://assets/img/cursor mf-Sheet.png" id="2_h5y67"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u7p5w"]
-size = Vector2(32, 32)
+size = Vector2(12, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3tcj"]
-size = Vector2(32, 96)
+size = Vector2(12, 96)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3rttl"]
 size = Vector2(32, 600)
@@ -33,7 +33,9 @@ shape = SubResource("RectangleShape2D_l3tcj")
 [node name="fail" type="Area2D" parent="." unique_id=873205091]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fail" unique_id=691454684]
+position = Vector2(-54, 0)
 shape = SubResource("RectangleShape2D_3rttl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=817409559]
 texture = ExtResource("2_h5y67")
+hframes = 2

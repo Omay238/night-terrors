@@ -1,6 +1,8 @@
 @tool
 extends Node2D
 
+var is_hit := false
+
 @export_range(0, 1000000) var time: int:
 	set(value):
 		time = value

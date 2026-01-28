@@ -8,12 +8,21 @@ func _process(delta: float) -> void:
 	p_block = floori(position.x / 32.0)
 	position.x = position.x + 128 * delta
 	
-	if len($perfect.get_overlapping_bodies()) > 0 and Input.is_action_just_pressed("start") and p_block != floori(position.x / 32.0):
-		hits += 2
-	elif len($good.get_overlapping_bodies()) > 0 and Input.is_action_just_pressed("start") and p_block != floori(position.x / 32.0):
-		hits += 1
-	elif len($fail.get_overlapping_bodies()) > 0 and p_block != floori(position.x / 32.0):
-		misses += 1
+	if Input.is_action_just_pressed("start"):
+		for body in $perfect.get_overlapping_bodies():
+			if not body.is_hit:
+				body.is_hit = true
+				hits += 2
+		
+		for body in $good.get_overlapping_bodies():
+			if not body.is_hit:
+				body.is_hit = true
+				hits += 1
+	
+	for body in $fail.get_overlapping_bodies():
+		if not body.is_hit:
+			body.is_hit = true
+			misses += 1
 	
 	if Input.is_action_pressed("up"):
 		position.y -= 200 * delta
