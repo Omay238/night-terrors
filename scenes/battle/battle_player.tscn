@@ -9,9 +9,6 @@ size = Vector2(32, 32)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3tcj"]
 size = Vector2(32, 96)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5y67"]
-size = Vector2(32, 160)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3rttl"]
 size = Vector2(32, 600)
 
@@ -32,11 +29,6 @@ shape = SubResource("RectangleShape2D_u7p5w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="good" unique_id=1656597284]
 shape = SubResource("RectangleShape2D_l3tcj")
-
-[node name="bad" type="Area2D" parent="." unique_id=1179124382]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="bad" unique_id=2042388827]
-shape = SubResource("RectangleShape2D_h5y67")
 
 [node name="fail" type="Area2D" parent="." unique_id=873205091]
 
