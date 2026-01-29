@@ -2,6 +2,10 @@ extends Sprite2D
 
 var player_in = false
 
+func _ready() -> void:
+	if Global.level > 1:
+		$"../Tutorial4".hide()
+
 func _input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("start") and player_in:
 		get_tree().change_scene_to_file("res://scenes/level_select.tscn")
