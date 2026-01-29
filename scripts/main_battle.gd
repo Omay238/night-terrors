@@ -5,8 +5,7 @@ func _rhythm():
 	add_child(Global.op.enemy_type.song.instantiate())
 	$Attack.disabled = true
 	$Rhythm/Rhythm.global_position.y = -100000
-	$Rhythm/Rhythm/BattlePlayer/Camera2D.limit_top = -99850
-	$Rhythm/Rhythm/BattlePlayer/Camera2D.limit_bottom = -99850
+	$Rhythm/Rhythm/BattlePlayer.camera_pos = -99850
 	await $Rhythm/Rhythm/AudioStreamPlayer2D.finished
 	await get_tree().create_timer(1).timeout
 	$Rhythm.queue_free()

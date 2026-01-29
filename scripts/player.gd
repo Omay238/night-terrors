@@ -8,6 +8,9 @@ var err := 0.0
 
 var animation := "idle_down"
 
+func _ready() -> void:
+	get_tree().paused = false
+
 func _process(delta: float) -> void:
 	# gather motion vector
 	var vel := Input.get_vector("left", "right", "up", "down")

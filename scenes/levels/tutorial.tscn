@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://c75ju5p5742p4" path="res://assets/img/toilet decor.png" id="9_4a02d"]
 [ext_resource type="Texture2D" uid="uid://buy4xc4n8dbgq" path="res://assets/img/prison bench.png" id="10_uu0hj"]
 [ext_resource type="PackedScene" uid="uid://cqtpm03v1c0sp" path="res://scenes/exit.tscn" id="11_uu0hj"]
+[ext_resource type="Texture2D" uid="uid://divolfyarircr" path="res://assets/img/rat decor-Sheet.png" id="13_cw4as"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4o7q8"]
 custom_solver_bias = 1.0
@@ -209,6 +210,56 @@ song = ExtResource("7_84vya")
 moves = true
 metadata/_custom_type_script = "uid://cpuqdoi4xe6em"
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1d85"]
+atlas = ExtResource("13_cw4as")
+region = Rect2(0, 0, 9, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rqrb"]
+atlas = ExtResource("13_cw4as")
+region = Rect2(9, 0, 9, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7mr2"]
+atlas = ExtResource("13_cw4as")
+region = Rect2(18, 0, 9, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_giya0"]
+atlas = ExtResource("13_cw4as")
+region = Rect2(27, 0, 9, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arvqe"]
+atlas = ExtResource("13_cw4as")
+region = Rect2(36, 0, 9, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4n5tw"]
+atlas = ExtResource("13_cw4as")
+region = Rect2(45, 0, 9, 15)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p4ft5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1d85")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4rqrb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7mr2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_giya0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arvqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4n5tw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [node name="Level1" type="Node2D" unique_id=256621396 node_paths=PackedStringArray("exit")]
 script = ExtResource("1_3e81p")
 enemies = 2
@@ -242,6 +293,13 @@ texture = ExtResource("9_4a02d")
 [node name="PrisonBench" type="Sprite2D" parent="." unique_id=1151187933]
 position = Vector2(208, 145)
 texture = ExtResource("10_uu0hj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=101334449]
+position = Vector2(304, -185)
+sprite_frames = SubResource("SpriteFrames_p4ft5")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.088719554
 
 [node name="Exit" parent="." unique_id=1940722629 instance=ExtResource("11_uu0hj")]
 visible = false
