@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://b1n3eputyrxn5"]
+
+[ext_resource type="PackedScene" uid="uid://c2ngf1ccu5gub" path="res://scenes/battle/rhythm.tscn" id="1_hskiy"]
+[ext_resource type="PackedScene" uid="uid://bs2l2da0rg05u" path="res://scenes/battle/note.tscn" id="2_dfghe"]
+[ext_resource type="AudioStream" uid="uid://6muabo81yfs2" path="res://assets/audio/TSA game song #1.wav" id="2_thjra"]
+
+[node name="Rhythm" type="Node2D" unique_id=1507381283]
+
+[node name="Rhythm" parent="." unique_id=415702952 instance=ExtResource("1_hskiy")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Rhythm" unique_id=263625866]
+stream = ExtResource("2_thjra")
+max_distance = 200000.0
+
+[node name="Note" parent="Rhythm" unique_id=77649193 instance=ExtResource("2_dfghe")]
+position = Vector2(16, 272)
+time = 1.0
+line = 8
+
+[node name="Note2" parent="Rhythm" unique_id=617652250 instance=ExtResource("2_dfghe")]
+position = Vector2(208, 176)
+time = 7.0
+line = 5
+
+[node name="Note3" parent="Rhythm" unique_id=1554905427 instance=ExtResource("2_dfghe")]
+position = Vector2(176, 176)
+time = 6.0
+line = 5
+
+[node name="Note4" parent="Rhythm" unique_id=1104838832 instance=ExtResource("2_dfghe")]
+position = Vector2(304, 240)
+time = 10.0
+line = 7
+
+[node name="Note5" parent="Rhythm" unique_id=1816103621 instance=ExtResource("2_dfghe")]
+position = Vector2(464, 176)
+time = 15.0
+line = 5
+
+[node name="Note6" parent="Rhythm" unique_id=418376000 instance=ExtResource("2_dfghe")]
+position = Vector2(496, 176)
+time = 16.0
+line = 5
+
+[node name="Note7" parent="Rhythm" unique_id=2049156813 instance=ExtResource("2_dfghe")]
+position = Vector2(624, 208)
+time = 20.0
+line = 6
+
+[node name="Note8" parent="Rhythm" unique_id=1712599921 instance=ExtResource("2_dfghe")]
+position = Vector2(752, 144)
+time = 24.0
+line = 4
+
+[node name="Note9" parent="Rhythm" unique_id=1246572747 instance=ExtResource("2_dfghe")]
+position = Vector2(912, 176)
+time = 29.0
+line = 5
+
+[node name="Note10" parent="Rhythm" unique_id=1594974635 instance=ExtResource("2_dfghe")]
+position = Vector2(1040, 48)
+time = 33.0
+line = 1
+
+[node name="Note11" parent="Rhythm" unique_id=2099192072 instance=ExtResource("2_dfghe")]
+position = Vector2(1136, 21)
+time = 36.0
+
+[node name="Note12" parent="Rhythm" unique_id=339440204 instance=ExtResource("2_dfghe")]
+position = Vector2(1296, 272)
+time = 41.0
+line = 8
+
+[node name="Note13" parent="Rhythm" unique_id=640068938 instance=ExtResource("2_dfghe")]
+position = Vector2(1488, 176)
+time = 47.0
+line = 5
+
+[node name="Note14" parent="Rhythm" unique_id=1250546665 instance=ExtResource("2_dfghe")]
+position = Vector2(1456, 176)
+time = 46.0
+line = 5
+
+[node name="Note15" parent="Rhythm" unique_id=1146461519 instance=ExtResource("2_dfghe")]
+position = Vector2(1584, 240)
+time = 50.0
+line = 7
+
+[node name="Note26" parent="Rhythm" unique_id=391978725 instance=ExtResource("2_dfghe")]
+position = Vector2(2736, 240)
+time = 86.0
+line = 7
+
+[node name="Note16" parent="Rhythm" unique_id=929547162 instance=ExtResource("2_dfghe")]
+position = Vector2(1744, 176)
+time = 55.0
+line = 5
+
+[node name="Note27" parent="Rhythm" unique_id=829110563 instance=ExtResource("2_dfghe")]
+position = Vector2(2864, 176)
+time = 90.0
+line = 5
+
+[node name="Note17" parent="Rhythm" unique_id=1861301972 instance=ExtResource("2_dfghe")]
+position = Vector2(1776, 176)
+time = 56.0
+line = 5
+
+[node name="Note28" parent="Rhythm" unique_id=1999777801 instance=ExtResource("2_dfghe")]
+position = Vector2(2896, 176)
+time = 91.0
+line = 5
+
+[node name="Note18" parent="Rhythm" unique_id=716709941 instance=ExtResource("2_dfghe")]
+position = Vector2(1904, 208)
+time = 60.0
+line = 6
+
+[node name="Note29" parent="Rhythm" unique_id=1868896960 instance=ExtResource("2_dfghe")]
+position = Vector2(3024, 208)
+time = 95.0
+line = 6
+
+[node name="Note19" parent="Rhythm" unique_id=466006020 instance=ExtResource("2_dfghe")]
+position = Vector2(2032, 144)
+time = 64.0
+line = 4
+
+[node name="Note30" parent="Rhythm" unique_id=296150335 instance=ExtResource("2_dfghe")]
+position = Vector2(3152, 144)
+time = 99.0
+line = 4
+
+[node name="Note20" parent="Rhythm" unique_id=2083509820 instance=ExtResource("2_dfghe")]
+position = Vector2(2128, 176)
+time = 67.0
+line = 5
+
+[node name="Note31" parent="Rhythm" unique_id=1388112823 instance=ExtResource("2_dfghe")]
+position = Vector2(3312, 176)
+time = 104.0
+line = 5
+
+[node name="Note21" parent="Rhythm" unique_id=199752876 instance=ExtResource("2_dfghe")]
+position = Vector2(2224, 48)
+time = 70.0
+line = 1
+
+[node name="Note32" parent="Rhythm" unique_id=1372940322 instance=ExtResource("2_dfghe")]
+position = Vector2(3440, 48)
+time = 108.0
+line = 1
+
+[node name="Note22" parent="Rhythm" unique_id=117208426 instance=ExtResource("2_dfghe")]
+position = Vector2(2320, 16)
+time = 73.0
+
+[node name="Note33" parent="Rhythm" unique_id=252197652 instance=ExtResource("2_dfghe")]
+position = Vector2(3536, 16)
+time = 111.0
+
+[node name="Note23" parent="Rhythm" unique_id=2098220068 instance=ExtResource("2_dfghe")]
+position = Vector2(2416, 272)
+time = 76.0
+line = 8
+
+[node name="Note24" parent="Rhythm" unique_id=578399 instance=ExtResource("2_dfghe")]
+position = Vector2(2608, 176)
+time = 82.0
+line = 5
+
+[node name="Note25" parent="Rhythm" unique_id=502297937 instance=ExtResource("2_dfghe")]
+position = Vector2(2576, 176)
+time = 81.0
+line = 5

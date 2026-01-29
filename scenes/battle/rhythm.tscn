@@ -16,54 +16,54 @@ texture = ExtResource("4_3uiao")
 
 [node name="Line" type="Sprite2D" parent="." unique_id=230472553]
 z_index = -1
-position = Vector2(16000, 16)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 16)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")
 
 [node name="Line2" type="Sprite2D" parent="." unique_id=161192253]
 z_index = -1
-position = Vector2(16000, 48)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 48)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")
 
 [node name="Line3" type="Sprite2D" parent="." unique_id=309784412]
 z_index = -1
-position = Vector2(16000, 80)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 80)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")
 
 [node name="Line4" type="Sprite2D" parent="." unique_id=1276172239]
 z_index = -1
-position = Vector2(16000, 112)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 112)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")
 
 [node name="Line5" type="Sprite2D" parent="." unique_id=281634852]
 z_index = -1
-position = Vector2(16000, 144)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 144)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")
 
 [node name="Line6" type="Sprite2D" parent="." unique_id=1415329648]
 z_index = -1
-position = Vector2(16000, 176)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 176)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")
 
 [node name="Line7" type="Sprite2D" parent="." unique_id=1706010881]
 z_index = -1
-position = Vector2(16000, 208)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 208)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")
 
 [node name="Line8" type="Sprite2D" parent="." unique_id=1481102678]
 z_index = -1
-position = Vector2(16000, 240)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 240)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")
 
 [node name="Line9" type="Sprite2D" parent="." unique_id=1212075430]
 z_index = -1
-position = Vector2(16000, 272)
-scale = Vector2(1000, 1)
+position = Vector2(25200, 272)
+scale = Vector2(1600, 1)
 texture = ExtResource("4_3uiao")

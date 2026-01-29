@@ -10,46 +10,45 @@
 
 [node name="Note" parent="Rhythm" unique_id=77649193 instance=ExtResource("4_lbivo")]
 position = Vector2(272, 176)
-time = 9
+time = 9.0
 line = 5
 duration = 3
 
 [node name="Note2" parent="Rhythm" unique_id=1331985719 instance=ExtResource("4_lbivo")]
 position = Vector2(400, 240)
-time = 13
+time = 13.0
 line = 7
 duration = 16
 
 [node name="Note3" parent="Rhythm" unique_id=895625383 instance=ExtResource("4_lbivo")]
 position = Vector2(1200, 112)
-time = 38
+time = 38.0
 line = 3
 duration = 10
 
 [node name="Note4" parent="Rhythm" unique_id=336531722 instance=ExtResource("4_lbivo")]
 position = Vector2(1744, 48)
-time = 55
+time = 55.0
 line = 1
 duration = 8
 
 [node name="Note5" parent="Rhythm" unique_id=158158946 instance=ExtResource("4_lbivo")]
 position = Vector2(2288, 16)
-time = 72
+time = 72.0
 duration = 8
 
 [node name="Note6" parent="Rhythm" unique_id=1151202593 instance=ExtResource("4_lbivo")]
 position = Vector2(2768, 208)
-time = 87
+time = 87.0
 line = 6
 duration = 9
 
 [node name="Note7" parent="Rhythm" unique_id=1105009884 instance=ExtResource("4_lbivo")]
 position = Vector2(3248, 112)
-time = 102
+time = 102.0
 line = 3
 duration = 8
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Rhythm" unique_id=1074434145]
 stream = ExtResource("3_bxm85")
-autoplay = true
 max_distance = 999999.0

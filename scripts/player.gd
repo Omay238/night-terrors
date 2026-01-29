@@ -10,6 +10,7 @@ var animation := "idle_down"
 
 func _ready() -> void:
 	get_tree().paused = false
+	Global.in_battle = false
 
 func _process(delta: float) -> void:
 	# gather motion vector

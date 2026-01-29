@@ -3,7 +3,7 @@ extends Node2D
 
 var is_hit := false
 
-@export_range(0, 1000000) var time: int:
+@export_range(0, 1000000) var time: float:
 	set(value):
 		time = value
 		position.x = 32 * time - 16

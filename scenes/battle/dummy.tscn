@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c2ngf1ccu5gub" path="res://scenes/battle/rhythm.tscn" id="1_yx5aj"]
 [ext_resource type="PackedScene" uid="uid://bs2l2da0rg05u" path="res://scenes/battle/note.tscn" id="2_yx5aj"]
 [ext_resource type="AudioStream" uid="uid://ovnmtgkv81mv" path="res://assets/audio/tutorial song.wav" id="3_1y36m"]
+[ext_resource type="Texture2D" uid="uid://f3e3wxeu2kfq" path="res://assets/img/tutorial.png" id="4_50us8"]
 
 [node name="Rhythm" type="Node2D" unique_id=1507381283]
 
@@ -10,135 +11,138 @@
 
 [node name="Note" parent="Rhythm" unique_id=77649193 instance=ExtResource("2_yx5aj")]
 position = Vector2(48, 272)
-time = 2
+time = 2.0
 line = 8
 
 [node name="Note2" parent="Rhythm" unique_id=1679092652 instance=ExtResource("2_yx5aj")]
 position = Vector2(272, 208)
-time = 9
+time = 9.0
 line = 6
 
 [node name="Note3" parent="Rhythm" unique_id=1559921323 instance=ExtResource("2_yx5aj")]
 position = Vector2(496, 144)
-time = 16
+time = 16.0
 line = 4
 
 [node name="Note4" parent="Rhythm" unique_id=862253824 instance=ExtResource("2_yx5aj")]
 position = Vector2(720, 80)
-time = 23
+time = 23.0
 line = 2
 
 [node name="Note5" parent="Rhythm" unique_id=1286953977 instance=ExtResource("2_yx5aj")]
 position = Vector2(976, 16)
-time = 31
+time = 31.0
 duration = 3
 
 [node name="Note6" parent="Rhythm" unique_id=1734032646 instance=ExtResource("2_yx5aj")]
 position = Vector2(1104, 272)
-time = 35
+time = 35.0
 line = 8
 
 [node name="Note7" parent="Rhythm" unique_id=380830293 instance=ExtResource("2_yx5aj")]
 position = Vector2(1328, 208)
-time = 42
+time = 42.0
 line = 6
 
 [node name="Note8" parent="Rhythm" unique_id=241737286 instance=ExtResource("2_yx5aj")]
 position = Vector2(1584, 144)
-time = 50
+time = 50.0
 line = 4
 
 [node name="Note9" parent="Rhythm" unique_id=68436618 instance=ExtResource("2_yx5aj")]
 position = Vector2(1808, 80)
-time = 57
+time = 57.0
 line = 2
 
 [node name="Note10" parent="Rhythm" unique_id=884236454 instance=ExtResource("2_yx5aj")]
 position = Vector2(2128, 16)
-time = 67
+time = 67.0
 duration = 1
 
 [node name="Note11" parent="Rhythm" unique_id=104556316 instance=ExtResource("2_yx5aj")]
 position = Vector2(2224, 208)
-time = 70
+time = 70.0
 line = 6
 
 [node name="Note12" parent="Rhythm" unique_id=1478759044 instance=ExtResource("2_yx5aj")]
 position = Vector2(2288, 272)
-time = 72
+time = 72.0
 line = 8
 
 [node name="Note13" parent="Rhythm" unique_id=1606717092 instance=ExtResource("2_yx5aj")]
 position = Vector2(2352, 208)
-time = 74
+time = 74.0
 line = 6
 
 [node name="Note14" parent="Rhythm" unique_id=1871257350 instance=ExtResource("2_yx5aj")]
 position = Vector2(2416, 272)
-time = 76
+time = 76.0
 line = 8
 
 [node name="Note15" parent="Rhythm" unique_id=755148032 instance=ExtResource("2_yx5aj")]
 position = Vector2(2608, 272)
-time = 82
+time = 82.0
 line = 8
 
 [node name="Note16" parent="Rhythm" unique_id=1109415123 instance=ExtResource("2_yx5aj")]
 position = Vector2(2672, 208)
-time = 84
+time = 84.0
 line = 6
 
 [node name="Note17" parent="Rhythm" unique_id=124089681 instance=ExtResource("2_yx5aj")]
 position = Vector2(2736, 272)
-time = 86
+time = 86.0
 line = 8
 
 [node name="Note18" parent="Rhythm" unique_id=702948593 instance=ExtResource("2_yx5aj")]
 position = Vector2(2832, 144)
-time = 89
+time = 89.0
 line = 4
 
 [node name="Note19" parent="Rhythm" unique_id=930399954 instance=ExtResource("2_yx5aj")]
 position = Vector2(2992, 208)
-time = 94
+time = 94.0
 line = 6
 
 [node name="Note20" parent="Rhythm" unique_id=1564652096 instance=ExtResource("2_yx5aj")]
 position = Vector2(3088, 272)
-time = 97
+time = 97.0
 line = 8
 
 [node name="Note21" parent="Rhythm" unique_id=1326199553 instance=ExtResource("2_yx5aj")]
 position = Vector2(3184, 208)
-time = 100
+time = 100.0
 line = 6
 
 [node name="Note22" parent="Rhythm" unique_id=574227750 instance=ExtResource("2_yx5aj")]
 position = Vector2(3248, 272)
-time = 102
+time = 102.0
 line = 8
 
 [node name="Note23" parent="Rhythm" unique_id=350681370 instance=ExtResource("2_yx5aj")]
 position = Vector2(3440, 272)
-time = 108
+time = 108.0
 line = 8
 
 [node name="Note24" parent="Rhythm" unique_id=1031157539 instance=ExtResource("2_yx5aj")]
 position = Vector2(3504, 208)
-time = 110
+time = 110.0
 line = 6
 
 [node name="Note25" parent="Rhythm" unique_id=1264718318 instance=ExtResource("2_yx5aj")]
 position = Vector2(3600, 272)
-time = 113
+time = 113.0
 line = 8
 
 [node name="Note26" parent="Rhythm" unique_id=1250450776 instance=ExtResource("2_yx5aj")]
 position = Vector2(3696, 144)
-time = 116
+time = 116.0
 line = 4
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Rhythm" unique_id=263625866]
 stream = ExtResource("3_1y36m")
-autoplay = true
 max_distance = 200000.0
+
+[node name="Tutorial" type="Sprite2D" parent="Rhythm" unique_id=1607329583]
+position = Vector2(171, 95)
+texture = ExtResource("4_50us8")

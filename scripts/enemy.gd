@@ -15,6 +15,7 @@ func refresh():
 
 func _ready() -> void:
 	refresh()
+	$AnimatedSprite2D.play()
 
 func _process(delta: float) -> void:
 	if not Engine.is_editor_hint():
@@ -48,6 +49,7 @@ func _process(delta: float) -> void:
 func _begin_combat(body: Node):
 	if body == $"../Player":
 		$"../Player/MainBattle".show()
-		$"../Player/MainBattle/Attack".disabled = false
 		Global.op = self
 		Global.in_battle = true
+		await get_tree().create_timer(1.0).timeout
+		$"../Player/MainBattle"._rhythm()

@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://c2gvkcxrycok2"]
+
+[ext_resource type="PackedScene" uid="uid://c2ngf1ccu5gub" path="res://scenes/battle/rhythm.tscn" id="1_dgctf"]
+[ext_resource type="AudioStream" uid="uid://ctum2i47eu7mq" path="res://assets/audio/Boss Song #1.wav" id="2_dgctf"]
+[ext_resource type="PackedScene" uid="uid://bs2l2da0rg05u" path="res://scenes/battle/note.tscn" id="3_ouynj"]
+
+[node name="Rhythm" type="Node2D" unique_id=1507381283]
+
+[node name="Rhythm" parent="." unique_id=415702952 instance=ExtResource("1_dgctf")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Rhythm" unique_id=263625866]
+stream = ExtResource("2_dgctf")
+autoplay = true
+max_distance = 200000.0
+
+[node name="Note" parent="Rhythm" unique_id=77649193 instance=ExtResource("3_ouynj")]
+position = Vector2(16, 240)
+time = 1.0
+line = 7
+
+[node name="Note2" parent="Rhythm" unique_id=11321299 instance=ExtResource("3_ouynj")]
+position = Vector2(112, 176)
+time = 4.0
+line = 5
+
+[node name="Note3" parent="Rhythm" unique_id=1820977411 instance=ExtResource("3_ouynj")]
+position = Vector2(128, 144)
+time = 4.5
+line = 4
+
+[node name="Note4" parent="Rhythm" unique_id=769119721 instance=ExtResource("3_ouynj")]
+position = Vector2(144, 112)
+time = 5.0
+line = 3
+
+[node name="Note5" parent="Rhythm" unique_id=364427043 instance=ExtResource("3_ouynj")]
+position = Vector2(160, 80)
+time = 5.5
+line = 2
+
+[node name="Note6" parent="Rhythm" unique_id=545708602 instance=ExtResource("3_ouynj")]
+position = Vector2(176, 48)
+time = 6.0
+line = 1
+
+[node name="Note7" parent="Rhythm" unique_id=1439845975 instance=ExtResource("3_ouynj")]
+position = Vector2(192, 17)
+time = 6.5
+
+[node name="Note8" parent="Rhythm" unique_id=702607450 instance=ExtResource("3_ouynj")]
+position = Vector2(208, 80)
+time = 7.0
+line = 2
+
+[node name="Note9" parent="Rhythm" unique_id=2078580141 instance=ExtResource("3_ouynj")]
+position = Vector2(272, 112)
+time = 9.0
+line = 3

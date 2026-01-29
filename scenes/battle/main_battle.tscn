@@ -4,12 +4,3 @@
 
 [node name="MainBattle" type="Node2D" unique_id=541101866]
 script = ExtResource("1_2fped")
-
-[node name="Attack" type="Button" parent="." unique_id=1619196625]
-offset_left = -190.0
-offset_top = 100.0
-offset_right = -133.0
-offset_bottom = 131.0
-text = "attack"
-
-[connection signal="button_down" from="Attack" to="." method="_rhythm"]

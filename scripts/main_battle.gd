@@ -3,7 +3,6 @@ extends Node2D
 func _rhythm():
 	$"../Camera2D".enabled = false
 	add_child(Global.op.enemy_type.song.instantiate())
-	$Attack.disabled = true
 	$Rhythm/Rhythm.global_position.y = -100000
 	$Rhythm/Rhythm/BattlePlayer.camera_pos = -99850
 	await $Rhythm/Rhythm/AudioStreamPlayer2D.finished
