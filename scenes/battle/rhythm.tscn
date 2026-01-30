@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://c2ngf1ccu5gub"]
 
+[ext_resource type="Script" uid="uid://c8365cvksl8gc" path="res://scripts/jankbpm.gd" id="1_qaih8"]
 [ext_resource type="PackedScene" uid="uid://bkm4ivs4328k4" path="res://scenes/battle/battle_player.tscn" id="2_80g1h"]
 [ext_resource type="Texture2D" uid="uid://q0g4w4p8q2wm" path="res://assets/img/line.png" id="4_3uiao"]
 
 [node name="Rhythm" type="Node2D" unique_id=415702952]
+script = ExtResource("1_qaih8")
 
 [node name="BattlePlayer" parent="." unique_id=859383250 instance=ExtResource("2_80g1h")]
 z_index = 100

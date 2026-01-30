@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://c2gvkcxrycok2"]
 
 [ext_resource type="PackedScene" uid="uid://c2ngf1ccu5gub" path="res://scenes/battle/rhythm.tscn" id="1_dgctf"]
-[ext_resource type="AudioStream" uid="uid://ctum2i47eu7mq" path="res://assets/audio/Boss Song #1.wav" id="2_dgctf"]
+[ext_resource type="AudioStream" uid="uid://dpd74qp0batoc" path="res://assets/audio/Boss Song #1 (1).wav" id="2_ouynj"]
 [ext_resource type="PackedScene" uid="uid://bs2l2da0rg05u" path="res://scenes/battle/note.tscn" id="3_ouynj"]
 
 [node name="Rhythm" type="Node2D" unique_id=1507381283]
 
 [node name="Rhythm" parent="." unique_id=415702952 instance=ExtResource("1_dgctf")]
+jank_bpm = 1.625
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Rhythm" unique_id=263625866]
-stream = ExtResource("2_dgctf")
-autoplay = true
+stream = ExtResource("2_ouynj")
 max_distance = 200000.0
 
 [node name="Note" parent="Rhythm" unique_id=77649193 instance=ExtResource("3_ouynj")]
@@ -18,41 +18,584 @@ position = Vector2(16, 240)
 time = 1.0
 line = 7
 
+[node name="Note91" parent="Rhythm" unique_id=548911149 instance=ExtResource("3_ouynj")]
+position = Vector2(9136, 240)
+time = 286.0
+line = 7
+duration = 5
+
 [node name="Note2" parent="Rhythm" unique_id=11321299 instance=ExtResource("3_ouynj")]
-position = Vector2(112, 176)
-time = 4.0
+position = Vector2(208, 176)
+time = 7.0
+line = 5
+
+[node name="Note92" parent="Rhythm" unique_id=356982451 instance=ExtResource("3_ouynj")]
+position = Vector2(9328, 176)
+time = 292.0
 line = 5
 
 [node name="Note3" parent="Rhythm" unique_id=1820977411 instance=ExtResource("3_ouynj")]
-position = Vector2(128, 144)
-time = 4.5
+position = Vector2(240, 144)
+time = 8.0
+line = 4
+
+[node name="Note93" parent="Rhythm" unique_id=802126651 instance=ExtResource("3_ouynj")]
+position = Vector2(9360, 144)
+time = 293.0
 line = 4
 
 [node name="Note4" parent="Rhythm" unique_id=769119721 instance=ExtResource("3_ouynj")]
-position = Vector2(144, 112)
-time = 5.0
-line = 3
-
-[node name="Note5" parent="Rhythm" unique_id=364427043 instance=ExtResource("3_ouynj")]
-position = Vector2(160, 80)
-time = 5.5
-line = 2
-
-[node name="Note6" parent="Rhythm" unique_id=545708602 instance=ExtResource("3_ouynj")]
-position = Vector2(176, 48)
-time = 6.0
-line = 1
-
-[node name="Note7" parent="Rhythm" unique_id=1439845975 instance=ExtResource("3_ouynj")]
-position = Vector2(192, 17)
-time = 6.5
-
-[node name="Note8" parent="Rhythm" unique_id=702607450 instance=ExtResource("3_ouynj")]
-position = Vector2(208, 80)
-time = 7.0
-line = 2
-
-[node name="Note9" parent="Rhythm" unique_id=2078580141 instance=ExtResource("3_ouynj")]
 position = Vector2(272, 112)
 time = 9.0
 line = 3
+
+[node name="Note94" parent="Rhythm" unique_id=1780951203 instance=ExtResource("3_ouynj")]
+position = Vector2(9392, 112)
+time = 294.0
+line = 3
+
+[node name="Note5" parent="Rhythm" unique_id=364427043 instance=ExtResource("3_ouynj")]
+position = Vector2(304, 80)
+time = 10.0
+line = 2
+
+[node name="Note95" parent="Rhythm" unique_id=1996943203 instance=ExtResource("3_ouynj")]
+position = Vector2(9424, 80)
+time = 295.0
+line = 2
+
+[node name="Note6" parent="Rhythm" unique_id=545708602 instance=ExtResource("3_ouynj")]
+position = Vector2(336, 48)
+time = 11.0
+line = 1
+
+[node name="Note96" parent="Rhythm" unique_id=15243978 instance=ExtResource("3_ouynj")]
+position = Vector2(9456, 48)
+time = 296.0
+line = 1
+
+[node name="Note7" parent="Rhythm" unique_id=1439845975 instance=ExtResource("3_ouynj")]
+position = Vector2(368, 17)
+time = 12.0
+
+[node name="Note97" parent="Rhythm" unique_id=1444786431 instance=ExtResource("3_ouynj")]
+position = Vector2(9488, 16)
+time = 297.0
+
+[node name="Note8" parent="Rhythm" unique_id=1323050106 instance=ExtResource("3_ouynj")]
+position = Vector2(400, 144)
+time = 13.0
+line = 4
+
+[node name="Note98" parent="Rhythm" unique_id=1672571122 instance=ExtResource("3_ouynj")]
+position = Vector2(9520, 144)
+time = 298.0
+line = 4
+duration = 3
+
+[node name="Note9" parent="Rhythm" unique_id=1765441880 instance=ExtResource("3_ouynj")]
+position = Vector2(528, 112)
+time = 17.0
+line = 3
+
+[node name="Note99" parent="Rhythm" unique_id=489909018 instance=ExtResource("3_ouynj")]
+position = Vector2(9648, 112)
+time = 302.0
+line = 3
+duration = 3
+
+[node name="Note10" parent="Rhythm" unique_id=1974523202 instance=ExtResource("3_ouynj")]
+position = Vector2(656, 272)
+time = 21.0
+line = 8
+
+[node name="Note100" parent="Rhythm" unique_id=1292141711 instance=ExtResource("3_ouynj")]
+position = Vector2(9776, 272)
+time = 306.0
+line = 8
+duration = 4
+
+[node name="Note11" parent="Rhythm" unique_id=1126191126 instance=ExtResource("3_ouynj")]
+position = Vector2(816, 16)
+time = 26.0
+
+[node name="Note101" parent="Rhythm" unique_id=1757575628 instance=ExtResource("3_ouynj")]
+position = Vector2(9936, 16)
+time = 311.0
+
+[node name="Note12" parent="Rhythm" unique_id=1217479525 instance=ExtResource("3_ouynj")]
+position = Vector2(848, 48)
+time = 27.0
+line = 1
+
+[node name="Note102" parent="Rhythm" unique_id=249108119 instance=ExtResource("3_ouynj")]
+position = Vector2(9968, 48)
+time = 312.0
+line = 1
+
+[node name="Note13" parent="Rhythm" unique_id=498346669 instance=ExtResource("3_ouynj")]
+position = Vector2(880, 80)
+time = 28.0
+line = 2
+
+[node name="Note103" parent="Rhythm" unique_id=2122195858 instance=ExtResource("3_ouynj")]
+position = Vector2(10000, 80)
+time = 313.0
+line = 2
+
+[node name="Note14" parent="Rhythm" unique_id=1091029525 instance=ExtResource("3_ouynj")]
+position = Vector2(912, 112)
+time = 29.0
+line = 3
+
+[node name="Note104" parent="Rhythm" unique_id=2120100674 instance=ExtResource("3_ouynj")]
+position = Vector2(10032, 112)
+time = 314.0
+line = 3
+
+[node name="Note15" parent="Rhythm" unique_id=90834976 instance=ExtResource("3_ouynj")]
+position = Vector2(944, 144)
+time = 30.0
+line = 4
+
+[node name="Note105" parent="Rhythm" unique_id=889623352 instance=ExtResource("3_ouynj")]
+position = Vector2(10064, 144)
+time = 315.0
+line = 4
+
+[node name="Note16" parent="Rhythm" unique_id=566901690 instance=ExtResource("3_ouynj")]
+position = Vector2(976, 176)
+time = 31.0
+line = 5
+
+[node name="Note106" parent="Rhythm" unique_id=1819864715 instance=ExtResource("3_ouynj")]
+position = Vector2(10096, 176)
+time = 316.0
+line = 5
+
+[node name="Note17" parent="Rhythm" unique_id=1408660735 instance=ExtResource("3_ouynj")]
+position = Vector2(1040, 272)
+time = 33.0
+line = 8
+
+[node name="Note107" parent="Rhythm" unique_id=969155725 instance=ExtResource("3_ouynj")]
+position = Vector2(10160, 240)
+time = 318.0
+line = 7
+duration = 11
+
+[node name="Note108" parent="Rhythm" unique_id=850017688 instance=ExtResource("3_ouynj")]
+position = Vector2(10544, 272)
+time = 330.0
+line = 8
+duration = 24
+
+[node name="Note18" parent="Rhythm" unique_id=1705535813 instance=ExtResource("3_ouynj")]
+position = Vector2(1136, 112)
+time = 36.0
+line = 3
+duration = 4
+
+[node name="Note47" parent="Rhythm" unique_id=1431285055 instance=ExtResource("3_ouynj")]
+position = Vector2(4080, 112)
+time = 128.0
+line = 3
+duration = 4
+
+[node name="Note77" parent="Rhythm" unique_id=439973551 instance=ExtResource("3_ouynj")]
+position = Vector2(7376, 112)
+time = 231.0
+line = 3
+duration = 4
+
+[node name="Note19" parent="Rhythm" unique_id=1778044784 instance=ExtResource("3_ouynj")]
+position = Vector2(1296, 176)
+time = 41.0
+line = 5
+duration = 2
+
+[node name="Note48" parent="Rhythm" unique_id=417210109 instance=ExtResource("3_ouynj")]
+position = Vector2(4240, 176)
+time = 133.0
+line = 5
+duration = 2
+
+[node name="Note78" parent="Rhythm" unique_id=128609975 instance=ExtResource("3_ouynj")]
+position = Vector2(7536, 176)
+time = 236.0
+line = 5
+duration = 2
+
+[node name="Note20" parent="Rhythm" unique_id=677244655 instance=ExtResource("3_ouynj")]
+position = Vector2(1392, 112)
+time = 44.0
+line = 3
+duration = 3
+
+[node name="Note49" parent="Rhythm" unique_id=1860821879 instance=ExtResource("3_ouynj")]
+position = Vector2(4336, 112)
+time = 136.0
+line = 3
+duration = 3
+
+[node name="Note79" parent="Rhythm" unique_id=2076890208 instance=ExtResource("3_ouynj")]
+position = Vector2(7632, 112)
+time = 239.0
+line = 3
+duration = 3
+
+[node name="Note21" parent="Rhythm" unique_id=2126739286 instance=ExtResource("3_ouynj")]
+position = Vector2(1520, 144)
+time = 48.0
+line = 4
+duration = 3
+
+[node name="Note50" parent="Rhythm" unique_id=116214764 instance=ExtResource("3_ouynj")]
+position = Vector2(4464, 144)
+time = 140.0
+line = 4
+duration = 3
+
+[node name="Note80" parent="Rhythm" unique_id=846226323 instance=ExtResource("3_ouynj")]
+position = Vector2(7760, 144)
+time = 243.0
+line = 4
+duration = 3
+
+[node name="Note22" parent="Rhythm" unique_id=357075485 instance=ExtResource("3_ouynj")]
+position = Vector2(1648, 176)
+time = 52.0
+line = 5
+duration = 1
+
+[node name="Note51" parent="Rhythm" unique_id=503793682 instance=ExtResource("3_ouynj")]
+position = Vector2(4592, 176)
+time = 144.0
+line = 5
+duration = 1
+
+[node name="Note81" parent="Rhythm" unique_id=297427366 instance=ExtResource("3_ouynj")]
+position = Vector2(7888, 176)
+time = 247.0
+line = 5
+duration = 1
+
+[node name="Note23" parent="Rhythm" unique_id=466072691 instance=ExtResource("3_ouynj")]
+position = Vector2(1712, 112)
+time = 54.0
+line = 3
+duration = 1
+
+[node name="Note52" parent="Rhythm" unique_id=1399789193 instance=ExtResource("3_ouynj")]
+position = Vector2(4656, 112)
+time = 146.0
+line = 3
+duration = 1
+
+[node name="Note82" parent="Rhythm" unique_id=476888237 instance=ExtResource("3_ouynj")]
+position = Vector2(7952, 112)
+time = 249.0
+line = 3
+duration = 1
+
+[node name="Note25" parent="Rhythm" unique_id=716188643 instance=ExtResource("3_ouynj")]
+position = Vector2(1840, 112)
+time = 58.0
+line = 3
+duration = 1
+
+[node name="Note54" parent="Rhythm" unique_id=820541955 instance=ExtResource("3_ouynj")]
+position = Vector2(4784, 112)
+time = 150.0
+line = 3
+duration = 1
+
+[node name="Note84" parent="Rhythm" unique_id=1156185990 instance=ExtResource("3_ouynj")]
+position = Vector2(8080, 112)
+time = 253.0
+line = 3
+duration = 1
+
+[node name="Note26" parent="Rhythm" unique_id=1674606762 instance=ExtResource("3_ouynj")]
+position = Vector2(1904, 176)
+time = 60.0
+line = 5
+duration = 1
+
+[node name="Note55" parent="Rhythm" unique_id=487223424 instance=ExtResource("3_ouynj")]
+position = Vector2(4848, 176)
+time = 152.0
+line = 5
+duration = 1
+
+[node name="Note85" parent="Rhythm" unique_id=502245837 instance=ExtResource("3_ouynj")]
+position = Vector2(8144, 176)
+time = 255.0
+line = 5
+duration = 1
+
+[node name="Note27" parent="Rhythm" unique_id=699636558 instance=ExtResource("3_ouynj")]
+position = Vector2(1968, 208)
+time = 62.0
+line = 6
+duration = 1
+
+[node name="Note56" parent="Rhythm" unique_id=1932402037 instance=ExtResource("3_ouynj")]
+position = Vector2(4912, 208)
+time = 154.0
+line = 6
+duration = 1
+
+[node name="Note86" parent="Rhythm" unique_id=708766019 instance=ExtResource("3_ouynj")]
+position = Vector2(8208, 208)
+time = 257.0
+line = 6
+duration = 1
+
+[node name="Note28" parent="Rhythm" unique_id=378079716 instance=ExtResource("3_ouynj")]
+position = Vector2(2032, 144)
+time = 64.0
+line = 4
+duration = 5
+
+[node name="Note57" parent="Rhythm" unique_id=483677766 instance=ExtResource("3_ouynj")]
+position = Vector2(4976, 144)
+time = 156.0
+line = 4
+duration = 5
+
+[node name="Note87" parent="Rhythm" unique_id=735001176 instance=ExtResource("3_ouynj")]
+position = Vector2(8272, 144)
+time = 259.0
+line = 4
+duration = 5
+
+[node name="Note29" parent="Rhythm" unique_id=903317377 instance=ExtResource("3_ouynj")]
+position = Vector2(2224, 176)
+time = 70.0
+line = 5
+duration = 7
+
+[node name="Note58" parent="Rhythm" unique_id=1332764127 instance=ExtResource("3_ouynj")]
+position = Vector2(5168, 176)
+time = 162.0
+line = 5
+duration = 7
+
+[node name="Note88" parent="Rhythm" unique_id=1938551736 instance=ExtResource("3_ouynj")]
+position = Vector2(8464, 176)
+time = 265.0
+line = 5
+duration = 7
+
+[node name="Note30" parent="Rhythm" unique_id=1633261118 instance=ExtResource("3_ouynj")]
+position = Vector2(2480, 80)
+time = 78.0
+line = 2
+duration = 5
+
+[node name="Note59" parent="Rhythm" unique_id=654323426 instance=ExtResource("3_ouynj")]
+position = Vector2(5424, 80)
+time = 170.0
+line = 2
+duration = 5
+
+[node name="Note89" parent="Rhythm" unique_id=208265877 instance=ExtResource("3_ouynj")]
+position = Vector2(8720, 80)
+time = 273.0
+line = 2
+duration = 5
+
+[node name="Note31" parent="Rhythm" unique_id=139084584 instance=ExtResource("3_ouynj")]
+position = Vector2(2672, 112)
+time = 84.0
+line = 3
+duration = 5
+
+[node name="Note60" parent="Rhythm" unique_id=305736183 instance=ExtResource("3_ouynj")]
+position = Vector2(5616, 112)
+time = 176.0
+line = 3
+duration = 5
+
+[node name="Note90" parent="Rhythm" unique_id=1114267702 instance=ExtResource("3_ouynj")]
+position = Vector2(8912, 112)
+time = 279.0
+line = 3
+duration = 5
+
+[node name="Note61" parent="Rhythm" unique_id=215098651 instance=ExtResource("3_ouynj")]
+position = Vector2(5808, 80)
+time = 182.0
+line = 2
+
+[node name="Note62" parent="Rhythm" unique_id=108097803 instance=ExtResource("3_ouynj")]
+position = Vector2(5872, 112)
+time = 184.0
+line = 3
+
+[node name="Note63" parent="Rhythm" unique_id=1900674200 instance=ExtResource("3_ouynj")]
+position = Vector2(5936, 144)
+time = 186.0
+line = 4
+
+[node name="Note64" parent="Rhythm" unique_id=1061364667 instance=ExtResource("3_ouynj")]
+position = Vector2(6000, 176)
+time = 188.0
+line = 5
+
+[node name="Note65" parent="Rhythm" unique_id=2113453048 instance=ExtResource("3_ouynj")]
+position = Vector2(6064, 208)
+time = 190.0
+line = 6
+
+[node name="Note66" parent="Rhythm" unique_id=510902734 instance=ExtResource("3_ouynj")]
+position = Vector2(6224, 240)
+time = 195.0
+line = 7
+
+[node name="Note67" parent="Rhythm" unique_id=884117118 instance=ExtResource("3_ouynj")]
+position = Vector2(6384, 272)
+time = 200.0
+line = 8
+
+[node name="Note68" parent="Rhythm" unique_id=1510317701 instance=ExtResource("3_ouynj")]
+position = Vector2(6576, 240)
+time = 206.0
+line = 7
+
+[node name="Note69" parent="Rhythm" unique_id=2066132594 instance=ExtResource("3_ouynj")]
+position = Vector2(6704, 208)
+time = 210.0
+line = 6
+
+[node name="Note70" parent="Rhythm" unique_id=854522339 instance=ExtResource("3_ouynj")]
+position = Vector2(6768, 176)
+time = 212.0
+line = 5
+
+[node name="Note71" parent="Rhythm" unique_id=56813854 instance=ExtResource("3_ouynj")]
+position = Vector2(6832, 144)
+time = 214.0
+line = 4
+
+[node name="Note72" parent="Rhythm" unique_id=1755525820 instance=ExtResource("3_ouynj")]
+position = Vector2(6896, 112)
+time = 216.0
+line = 3
+
+[node name="Note73" parent="Rhythm" unique_id=2042239690 instance=ExtResource("3_ouynj")]
+position = Vector2(6960, 144)
+time = 218.0
+line = 4
+duration = 1
+
+[node name="Note74" parent="Rhythm" unique_id=169400069 instance=ExtResource("3_ouynj")]
+position = Vector2(7088, 208)
+time = 222.0
+line = 6
+duration = 1
+
+[node name="Note75" parent="Rhythm" unique_id=1666355929 instance=ExtResource("3_ouynj")]
+position = Vector2(7216, 176)
+time = 226.0
+line = 5
+duration = 1
+
+[node name="Note76" parent="Rhythm" unique_id=338244756 instance=ExtResource("3_ouynj")]
+position = Vector2(7344, 240)
+time = 230.0
+line = 7
+
+[node name="Note32" parent="Rhythm" unique_id=136562508 instance=ExtResource("3_ouynj")]
+position = Vector2(2896, 240)
+time = 91.0
+line = 7
+duration = 1
+
+[node name="Note33" parent="Rhythm" unique_id=1038482284 instance=ExtResource("3_ouynj")]
+position = Vector2(3088, 208)
+time = 97.0
+line = 6
+
+[node name="Note34" parent="Rhythm" unique_id=1583444368 instance=ExtResource("3_ouynj")]
+position = Vector2(3152, 176)
+time = 99.0
+line = 5
+
+[node name="Note35" parent="Rhythm" unique_id=1851427187 instance=ExtResource("3_ouynj")]
+position = Vector2(3216, 144)
+time = 101.0
+line = 4
+
+[node name="Note36" parent="Rhythm" unique_id=1912299233 instance=ExtResource("3_ouynj")]
+position = Vector2(3280, 112)
+time = 103.0
+line = 3
+
+[node name="Note37" parent="Rhythm" unique_id=703916581 instance=ExtResource("3_ouynj")]
+position = Vector2(3344, 80)
+time = 105.0
+line = 2
+
+[node name="Note38" parent="Rhythm" unique_id=1932682726 instance=ExtResource("3_ouynj")]
+position = Vector2(3408, 48)
+time = 107.0
+line = 1
+
+[node name="Note39" parent="Rhythm" unique_id=1830165027 instance=ExtResource("3_ouynj")]
+position = Vector2(3472, 16)
+time = 109.0
+
+[node name="Note40" parent="Rhythm" unique_id=1111580693 instance=ExtResource("3_ouynj")]
+position = Vector2(3568, 176)
+time = 112.0
+line = 5
+
+[node name="Note41" parent="Rhythm" unique_id=677823245 instance=ExtResource("3_ouynj")]
+position = Vector2(3728, 112)
+time = 117.0
+line = 3
+
+[node name="Note42" parent="Rhythm" unique_id=35020603 instance=ExtResource("3_ouynj")]
+position = Vector2(3760, 80)
+time = 118.0
+line = 2
+
+[node name="Note43" parent="Rhythm" unique_id=2074311466 instance=ExtResource("3_ouynj")]
+position = Vector2(3792, 144)
+time = 119.0
+line = 4
+
+[node name="Note44" parent="Rhythm" unique_id=403939071 instance=ExtResource("3_ouynj")]
+position = Vector2(3824, 176)
+time = 120.0
+line = 5
+
+[node name="Note45" parent="Rhythm" unique_id=1331824522 instance=ExtResource("3_ouynj")]
+position = Vector2(3856, 240)
+time = 121.0
+line = 7
+
+[node name="Note46" parent="Rhythm" unique_id=228131944 instance=ExtResource("3_ouynj")]
+position = Vector2(4016, 272)
+time = 126.0
+line = 8
+
+[node name="Note24" parent="Rhythm" unique_id=1048656595 instance=ExtResource("3_ouynj")]
+position = Vector2(1776, 48)
+time = 56.0
+line = 1
+duration = 1
+
+[node name="Note53" parent="Rhythm" unique_id=885822451 instance=ExtResource("3_ouynj")]
+position = Vector2(4720, 48)
+time = 148.0
+line = 1
+duration = 1
+
+[node name="Note83" parent="Rhythm" unique_id=814844338 instance=ExtResource("3_ouynj")]
+position = Vector2(8016, 48)
+time = 251.0
+line = 1
+duration = 1

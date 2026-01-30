@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 		p_block = floori(position.x / 32.0)
 		var p_misses = misses
 		var p_hits = hits
-		position.x = position.x + 128 * delta
+		position.x = position.x + 128 * delta * get_parent().jank_bpm
 		
 		if Input.is_action_pressed("start"):
 			$Sprite2D.frame = 1

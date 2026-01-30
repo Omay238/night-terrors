@@ -9,9 +9,9 @@ func _process(_delta):
 		queue_redraw()
 
 func _draw():
-	if not player or not player.playing:
-		return
+	#if not player or not player.playing:
+		#return
 
 	var x = player.get_playback_position() * rate
 	var size = get_viewport_rect().size
-	draw_line(Vector2(x, 0), Vector2(x, size.y), Color.RED, 2)
+	draw_line(Vector2(x, 0), Vector2(x, size.y), Color.RED, 4)

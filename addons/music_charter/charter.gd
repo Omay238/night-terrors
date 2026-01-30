@@ -45,7 +45,7 @@ func _enter_tree():
 	)
 	vbox.add_child(play_btn)
 
-	var rate_slider = HSlider.new()
+	var rate_slider = SpinBox.new()
 	rate_slider.min_value = 1
 	rate_slider.max_value = 256
 	rate_slider.value = rate
@@ -55,7 +55,7 @@ func _enter_tree():
 	)
 	vbox.add_child(rate_slider)
 
-	var speed_slider = HSlider.new()
+	var speed_slider = SpinBox.new()
 	speed_slider.step = 0.01
 	speed_slider.min_value = 0.1
 	speed_slider.max_value = 2.0

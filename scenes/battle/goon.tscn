@@ -1,12 +1,245 @@
 [gd_scene format=3 uid="uid://b85q58axjxlrf"]
 
 [ext_resource type="PackedScene" uid="uid://c2ngf1ccu5gub" path="res://scenes/battle/rhythm.tscn" id="1_liyqt"]
-[ext_resource type="AudioStream" uid="uid://glfl4eolmqcp" path="res://assets/audio/Basic Fight Song #2.wav" id="2_5r43l"]
+[ext_resource type="AudioStream" uid="uid://vviqc4a3oh6u" path="res://assets/audio/Basic Fight Song #2 (1).wav" id="2_5r43l"]
+[ext_resource type="PackedScene" uid="uid://bs2l2da0rg05u" path="res://scenes/battle/note.tscn" id="2_liyqt"]
 
 [node name="Rhythm" type="Node2D" unique_id=1507381283]
 
 [node name="Rhythm" parent="." unique_id=415702952 instance=ExtResource("1_liyqt")]
+jank_bpm = 1.05
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Rhythm" unique_id=263625866]
 stream = ExtResource("2_5r43l")
 max_distance = 200000.0
+
+[node name="Note" parent="Rhythm" unique_id=77649193 instance=ExtResource("2_liyqt")]
+position = Vector2(16, 144)
+time = 1.0
+line = 4
+duration = 3
+
+[node name="Note2" parent="Rhythm" unique_id=2063659390 instance=ExtResource("2_liyqt")]
+position = Vector2(144, 80)
+time = 5.0
+line = 2
+duration = 1
+
+[node name="Note3" parent="Rhythm" unique_id=78408134 instance=ExtResource("2_liyqt")]
+position = Vector2(208, 112)
+time = 7.0
+line = 3
+duration = 1
+
+[node name="Note4" parent="Rhythm" unique_id=1476579620 instance=ExtResource("2_liyqt")]
+position = Vector2(272, 176)
+time = 9.0
+line = 5
+duration = 1
+
+[node name="Note5" parent="Rhythm" unique_id=2024576810 instance=ExtResource("2_liyqt")]
+position = Vector2(336, 144)
+time = 11.0
+line = 4
+duration = 3
+
+[node name="Note6" parent="Rhythm" unique_id=1854511084 instance=ExtResource("2_liyqt")]
+position = Vector2(464, 176)
+time = 15.0
+line = 5
+duration = 1
+
+[node name="Note7" parent="Rhythm" unique_id=1782554847 instance=ExtResource("2_liyqt")]
+position = Vector2(528, 112)
+time = 17.0
+line = 3
+duration = 1
+
+[node name="Note8" parent="Rhythm" unique_id=92647292 instance=ExtResource("2_liyqt")]
+position = Vector2(592, 77)
+time = 19.0
+duration = 1
+
+[node name="Note9" parent="Rhythm" unique_id=368445009 instance=ExtResource("2_liyqt")]
+position = Vector2(656, 144)
+time = 21.0
+line = 4
+duration = 3
+
+[node name="Note10" parent="Rhythm" unique_id=968057147 instance=ExtResource("2_liyqt")]
+position = Vector2(784, 112)
+time = 25.0
+line = 3
+duration = 1
+
+[node name="Note11" parent="Rhythm" unique_id=1369441929 instance=ExtResource("2_liyqt")]
+position = Vector2(848, 80)
+time = 27.0
+line = 2
+duration = 1
+
+[node name="Note12" parent="Rhythm" unique_id=1506755028 instance=ExtResource("2_liyqt")]
+position = Vector2(912, 208)
+time = 29.0
+line = 6
+duration = 1
+
+[node name="Note13" parent="Rhythm" unique_id=842777643 instance=ExtResource("2_liyqt")]
+position = Vector2(976, 176)
+time = 31.0
+line = 5
+duration = 3
+
+[node name="Note14" parent="Rhythm" unique_id=1936955345 instance=ExtResource("2_liyqt")]
+position = Vector2(1104, 144)
+time = 35.0
+line = 4
+duration = 1
+
+[node name="Note19" parent="Rhythm" unique_id=686259740 instance=ExtResource("2_liyqt")]
+position = Vector2(1296, 144)
+time = 41.0
+line = 4
+duration = 3
+
+[node name="Note32" parent="Rhythm" unique_id=1654528754 instance=ExtResource("2_liyqt")]
+position = Vector2(1424, 144)
+time = 45.0
+line = 4
+duration = 1
+
+[node name="Note20" parent="Rhythm" unique_id=573466029 instance=ExtResource("2_liyqt")]
+position = Vector2(1488, 176)
+time = 47.0
+line = 5
+duration = 1
+
+[node name="Note21" parent="Rhythm" unique_id=1209822202 instance=ExtResource("2_liyqt")]
+position = Vector2(1552, 208)
+time = 49.0
+line = 6
+duration = 5
+
+[node name="Note22" parent="Rhythm" unique_id=1701090372 instance=ExtResource("2_liyqt")]
+position = Vector2(1744, 176)
+time = 55.0
+line = 5
+duration = 1
+
+[node name="Note23" parent="Rhythm" unique_id=1339854207 instance=ExtResource("2_liyqt")]
+position = Vector2(1808, 80)
+time = 57.0
+line = 2
+
+[node name="Note24" parent="Rhythm" unique_id=457878166 instance=ExtResource("2_liyqt")]
+position = Vector2(1840, 112)
+time = 58.0
+line = 3
+
+[node name="Note25" parent="Rhythm" unique_id=213315932 instance=ExtResource("2_liyqt")]
+position = Vector2(1872, 144)
+time = 59.0
+line = 4
+
+[node name="Note26" parent="Rhythm" unique_id=435780503 instance=ExtResource("2_liyqt")]
+position = Vector2(1904, 176)
+time = 60.0
+line = 5
+
+[node name="Note27" parent="Rhythm" unique_id=2054517879 instance=ExtResource("2_liyqt")]
+position = Vector2(1936, 240)
+time = 61.0
+line = 7
+duration = 3
+
+[node name="Note28" parent="Rhythm" unique_id=100356188 instance=ExtResource("2_liyqt")]
+position = Vector2(2064, 144)
+time = 65.0
+line = 4
+duration = 1
+
+[node name="Note29" parent="Rhythm" unique_id=24274009 instance=ExtResource("2_liyqt")]
+position = Vector2(2128, 176)
+time = 67.0
+line = 5
+duration = 1
+
+[node name="Note30" parent="Rhythm" unique_id=1940748799 instance=ExtResource("2_liyqt")]
+position = Vector2(2192, 240)
+time = 69.0
+line = 7
+duration = 1
+
+[node name="Note31" parent="Rhythm" unique_id=1201210316 instance=ExtResource("2_liyqt")]
+position = Vector2(2256, 208)
+time = 71.0
+line = 6
+duration = 3
+
+[node name="Note33" parent="Rhythm" unique_id=1493123397 instance=ExtResource("2_liyqt")]
+position = Vector2(2384, 240)
+time = 75.0
+line = 7
+duration = 1
+
+[node name="Note34" parent="Rhythm" unique_id=1150963499 instance=ExtResource("2_liyqt")]
+position = Vector2(2448, 176)
+time = 77.0
+line = 5
+duration = 1
+
+[node name="Note35" parent="Rhythm" unique_id=784073638 instance=ExtResource("2_liyqt")]
+position = Vector2(2512, 144)
+time = 79.0
+line = 4
+duration = 1
+
+[node name="Note36" parent="Rhythm" unique_id=680763896 instance=ExtResource("2_liyqt")]
+position = Vector2(2576, 208)
+time = 81.0
+line = 6
+duration = 3
+
+[node name="Note37" parent="Rhythm" unique_id=1835629042 instance=ExtResource("2_liyqt")]
+position = Vector2(2704, 144)
+time = 85.0
+line = 4
+duration = 1
+
+[node name="Note38" parent="Rhythm" unique_id=1714622141 instance=ExtResource("2_liyqt")]
+position = Vector2(2768, 176)
+time = 87.0
+line = 5
+duration = 1
+
+[node name="Note39" parent="Rhythm" unique_id=83597747 instance=ExtResource("2_liyqt")]
+position = Vector2(2832, 240)
+time = 89.0
+line = 7
+duration = 1
+
+[node name="Note40" parent="Rhythm" unique_id=924336110 instance=ExtResource("2_liyqt")]
+position = Vector2(2896, 208)
+time = 91.0
+line = 6
+duration = 3
+
+[node name="Note15" parent="Rhythm" unique_id=103494006 instance=ExtResource("2_liyqt")]
+position = Vector2(1168, 176)
+time = 37.0
+line = 5
+
+[node name="Note16" parent="Rhythm" unique_id=406137448 instance=ExtResource("2_liyqt")]
+position = Vector2(1200, 144)
+time = 38.0
+line = 4
+
+[node name="Note17" parent="Rhythm" unique_id=1898700384 instance=ExtResource("2_liyqt")]
+position = Vector2(1232, 112)
+time = 39.0
+line = 3
+
+[node name="Note18" parent="Rhythm" unique_id=1050781570 instance=ExtResource("2_liyqt")]
+position = Vector2(1264, 80)
+time = 40.0
+line = 2
