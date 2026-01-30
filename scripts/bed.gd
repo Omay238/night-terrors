@@ -3,7 +3,7 @@ extends Sprite2D
 var player_in = false
 
 func _ready() -> void:
-	if Global.level > 1:
+	if Global.level > 0:
 		$"../Tutorial4".hide()
 
 func _input(_event: InputEvent) -> void:

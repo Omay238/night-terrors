@@ -6,6 +6,7 @@ var p_block := -999
 var camera_pos := -99850
 var started = false
 var last_ouch = -1000
+var streak = 0
 
 func _ready():
 	await get_tree().create_timer(1.0).timeout
@@ -32,15 +33,18 @@ func _process(delta: float) -> void:
 					found_note = true
 					body.is_hit = true
 					hits += 1
+					streak += 1
 			
 			if found_note == false and Time.get_ticks_msec() - last_ouch >= 1000:
 				misses += 1
+				streak = 0
 		
 		for body in $fail.get_overlapping_bodies():
 			if not body.is_hit:
 				body.is_hit = true
 				if Time.get_ticks_msec() - last_ouch >= 1000:
 					misses += 1
+					streak = 0
 		
 		if p_misses != misses:
 			last_ouch = Time.get_ticks_msec()
@@ -50,6 +54,10 @@ func _process(delta: float) -> void:
 		if p_hits != hits:
 			$Camera2D/Lesterful.show()
 			$Camera2D/Lesterful.play()
+		
+		if streak == 5:
+			streak = 0
+			misses = max(misses - 1, 0)
 		
 		#if Input.is_action_pressed("up"):
 			#position.y -= 200 * delta
